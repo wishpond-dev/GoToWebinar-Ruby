@@ -31,7 +31,7 @@ module GoToWebinar
         :base_uri => "https://api.citrixonline.com/G2W/rest/organizers/#{@organizer_key}/",
         :headers => {
           "Content-type" => "application/json",
-          "Accept" => "application/json",
+          "Accept" => "application/vnd.citrix.g2wapi-v1.1+json",
           "Authorization" => "OAuth oauth_token=#{@access_token}" 
         }
       }
